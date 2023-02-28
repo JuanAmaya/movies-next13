@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import noPoster from "/public/imgs/No_posterL.png";
+import noPoster from "../../public/imgs/No_PosterL.png";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import WallaceLoading from "./WallaceLoading";
