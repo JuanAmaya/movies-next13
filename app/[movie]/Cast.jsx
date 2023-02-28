@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import WallaceLoading from "../../components/UI/WallaceLoading";
 import { motion } from "framer-motion";
-import noPoster from "../../public/imgs/No_posterL.png";
+import noPoster from "/public/imgs/No_posterL.png";
 
 export default function Movie({
   id,

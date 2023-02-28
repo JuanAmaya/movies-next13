@@ -25,7 +25,7 @@ export default function ShowCast({ data }) {
           profile_path={data.profile_path}
         />
       ))}
-      {castSize !== data.length && (
+      {castSize !== data.length && data.length > 4 && (
         <button
           onClick={showAllCast}
           className={"self-baseline justify-self-center"}
@@ -39,7 +39,7 @@ export default function ShowCast({ data }) {
           />
         </button>
       )}
-      {castSize === data.length && (
+      {castSize === data.length && data.length > 4 && (
         <button
           onClick={showLessCast}
           className={"self-baseline justify-self-center"}

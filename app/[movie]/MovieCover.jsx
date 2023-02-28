@@ -103,14 +103,15 @@ export default function MovieCover({
 
       <div className="flex justify-center w-full">
         <div className="max-w-max gap-2 my-8 flex absolute top-0">
-          {genres.map((genre) => (
-            <span
-              key={genre.id}
-              className="text-lg bg-slate-900/20 px-1 rounded-md"
-            >
-              {genre.name}
-            </span>
-          ))}
+          {genres !== undefined &&
+            genres.map((genre) => (
+              <span
+                key={genre.id}
+                className="text-lg bg-slate-900/20 px-1 rounded-md"
+              >
+                {genre.name}
+              </span>
+            ))}
         </div>
       </div>
     </div>

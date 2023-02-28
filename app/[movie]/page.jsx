@@ -44,13 +44,6 @@ export default async function MovieDetail({ params }) {
   const recommendationsRes = await recommendationsData.json();
   console.log("recomendaciones", recommendationsRes);
 
-  const genresArray =
-    res.genres.length > 0 ? (
-      res.genres.map((genre) => <li className="list-none">{genre.name}</li>)
-    ) : (
-      <span>UNKNOWN</span>
-    );
-
   const imagePath = "https://image.tmdb.org/t/p/original";
 
   let latestImgPoster;
