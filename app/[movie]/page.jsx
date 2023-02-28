@@ -152,16 +152,17 @@ export default async function MovieDetail({ params }) {
             title={"RECOMMENDATIONS"}
             content={
               <div className="mx-auto grid gap-4 justify-center grid-cols-cards mt-6 max-w-screen-xl">
-                {recommendationsRes.results
-                  .slice(0, 4)
-                  .map((recommendation) => (
-                    <MovieCard
-                      key={recommendation.id}
-                      id={recommendation.id}
-                      title={recommendation.title}
-                      poster_path={recommendation.poster_path}
-                    />
-                  ))}
+                {recommendationsData !== undefined &&
+                  recommendationsRes.results
+                    .slice(0, 4)
+                    .map((recommendation) => (
+                      <MovieCard
+                        key={recommendation.id}
+                        id={recommendation.id}
+                        title={recommendation.title}
+                        poster_path={recommendation.poster_path}
+                      />
+                    ))}
               </div>
             }
           />
